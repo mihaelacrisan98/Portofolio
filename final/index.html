@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Noto+Serif+Display:wght@500&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Mihaela Crisan Codes</title>
+
+    <script defer src="script.js"></script>
+    <script src="https://kit.fontawesome.com/4a846d267d.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <a href="#" class="nav__logo-link"> 
+        <img
+          src="img/logo.png"
+          alt="Mihaela logo"
+          class="nav__logo"
+          id="logo"
+          designer="Mihaela"
+        />
+      </a>
+        <ul class="nav__links">
+          <li class="nav__item">
+            <a class="nav__link" href="#section--1">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--2">Projects</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="#section--3">Skills</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--btn btn--show-modal" href="#"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header__title">
+        <!-- <h1 onclick="alert('HTML alert')"> -->
+        <h1>
+          Mihaela
+          <!-- Green highlight effect -->
+          <span class="highlight">Crișan</span> <br />
+          <span class="highlight">Front<span>-End</span></span
+          ><br />
+          <span>Web</span> <span class="highlight">Developer</span>
+        </h1>
+        <h4>
+          Junior Front-End Developer with a focus on building pixel perfect,
+          accessible products for the web.
+        </h4>
+        <button class="btn--text btn--scroll-to">Learn more &DownArrow;</button>
+        <img
+          src="img/hero.png"
+          class="header__img"
+          alt="Minimalist bank items"
+        />
+      </div>
+    </header>
+
+    <section class="section" id="section--1">
+      <div class="section__title">
+        <h2 class="section__description">About Me</h2>
+        <h3 class="section__header">
+          Hello World! I'm Mihaela, a Front-End Web Developer based out of Iași.
+        </h3>
+      </div>
+
+      <div class="operations">
+        <div class="operations__tab-container">
+          <button
+            class="btn operations__tab operations__tab--1 operations__tab--active"
+            data-tab="1"
+          >
+            <span></span>Tech Transition
+          </button>
+          <button class="btn operations__tab operations__tab--2" data-tab="2">
+            <span></span>Diverse Tech
+          </button>
+          <button class="btn operations__tab operations__tab--3" data-tab="3">
+            <span></span>Connect with me
+          </button>
+        </div>
+        <div
+          class="operations__content operations__content--1 operations__content--active"
+        >
+          <div class="operations__icon operations__icon--1">
+            <div>
+              <i class="fa-solid fa-user"></i>
+            </div>
+          </div>
+          <h5 class="operations__header">
+            From bioengineering to front-end development.
+          </h5>
+          <p>
+            From working with test tubes in a laboratory to lines of code on a
+            web page, I love combining the worlds of logic and creative design
+            to make eye-catching, accessible, and user-friendly websites.
+          </p>
+        </div>
+
+        <div class="operations__content operations__content--2">
+          <div class="operations__icon operations__icon--2">
+            <div>
+              <i class="fa-solid fa-earth-americas"></i>
+            </div>
+          </div>
+          <h5 class="operations__header">Technology leads, society follows.</h5>
+          <p>
+            The move towards increasing inclusivity and diversity in the IT
+            industry through the involvement of passionate individuals from
+            various fields holds great significance for me.
+          </p>
+        </div>
+        <div class="operations__content operations__content--3">
+          <div class="operations__icon operations__icon--3">
+            <div>
+              <i class="fa-solid fa-paperclip"></i>
+            </div>
+          </div>
+          <div>
+            <h5 class="operations__header">Contact Me</h5>
+            <p>
+              I'm excited to make the leap and continue refining my skills with
+              the right company. Check me out at:
+            </p>
+            <div class="social-icons">
+              <a href="https://github.com/mihaelacrisan98" target="_blank"
+                ><img src="img/github.png" alt="GitHub"
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/mihaela-cri%C8%99an-b01629258/"
+                target="_blank"
+                ><img src="img/linkedin.png" alt="LinkedIn"
+              /></a>
+              <a href="https://twitter.com/MihaelaC1102" target="_blank"
+                ><img src="img/twitter.png" alt="Twitter"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--2">
+      <div class="section__title">
+        <h2 class="section__description">Projects</h2>
+        <h3 class="section__header">Skills grow. So will this portfolio.</h3>
+      </div>
+
+      <div class="features">
+        <a href="https://baschet.metropolabrasov.ro/" target="_blank">
+          <img
+            src="img/basket-blur.jpg"
+            data-src="img/basket.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+            style="cursor: pointer"
+          />
+        </a>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Basket în Brașov</h5>
+          <p>
+            Revamping Brașov's basketball scene was my game with 'Hoops
+            Renovation,' part of Generația Tech's drive! From August to October
+            2023, we built a web hub for locals, tracking basketball court
+            makeovers. I spiced up the sign-in page for smooth sailing. My HTML
+            and CSS flair made account creation a breeze! Game on!
+            <br />
+            PS: Look at the bottom of the page and press
+            <strong><span style="font-weight: bold">EXPLORERS</span></strong
+            >. Check the Web Development team! &#x2764
+          </p>
+        </div>
+
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Guess-my-number</h5>
+          <p>
+            This project is a simple number-guessing game where a player needs
+            to guess a randomly generated secret number. The game provides
+            feedback on whether the guessed number is too high, too low, or
+            correct.
+          </p>
+        </div>
+        <a href="https://guess-my-number-mh.netlify.app/" target="_blank">
+          <img
+            src="img/guess-blur.jpg"
+            data-src="img/guess.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+            style="cursor: pointer"
+          />
+        </a>
+        <a href="https://pig-game-mh.netlify.app/" target="_blank"
+          >>
+          <img
+            src="img/pig-blur.jpg"
+            data-src="img/pig.jpg"
+            alt="Computer"
+            class="features__img lazy-img"
+            style="cursor: pointer"
+          />
+        </a>
+        <div class="features__feature">
+          <div class="features__icon">
+            <svg>
+              <use xlink:href="img/icons.svg#icon-monitor"></use>
+            </svg>
+          </div>
+          <h5 class="features__header">Pig-Game</h5>
+          <p>
+            This project is a simple web-based dice game where two players take
+            turns rolling a dice and accumulating points. The game consists of a
+            web page with two player panels, each displaying their current score
+            and total score. The page also includes buttons for rolling the
+            dice, holding the current score, and starting a new game.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="section--3">
+      <div class="section__title section__title--testimonials">
+        <h2 class="section__description">Skills</h2>
+        <h3 class="section__header">
+          I am taking courses and learning new coding skills every day!
+        </h3>
+      </div>
+
+      <div class="slider">
+        <div class="slide">
+            <div class="skills">
+              <div class="skills-name">
+                <i class="fa-brands fa-html5"></i>
+              </div>
+              <div class="skills-name">
+                <i class="fa-brands fa-css3"></i>
+              </div>
+            </div> 
+        </div>
+
+        <div class="slide">
+            <div class="skills">
+              <div class="skills-name">
+                <i class="fa-brands fa-js"></i>
+              </div>
+              <div class="skills-name">
+                <i class="fa-brands fa-react"></i>
+              </div>
+            </div>
+        </div>
+
+        <div class="slide">
+            <div class="skills">
+              <div class="skills-name">
+                <i class="fa-brands fa-git-alt"></i>
+              </div>
+              <div class="skills-name">
+                <i class="fa-brands fa-wordpress-simple"></i>
+              </div>
+            </div>
+        </div>
+
+        <button class="slider__btn slider__btn--left">&larr;</button>
+        <button class="slider__btn slider__btn--right">&rarr;</button>
+        <div class="dots"></div>
+      </div>
+    </section>
+
+    <section class="section section--sign-up">
+      <div class="social-icons-black">
+        <a href="https://github.com/mihaelacrisan98" target="_blank"
+                ><i class="fa-brands fa-github"></i>
+              /></a>
+              <a
+                href="https://www.linkedin.com/in/mihaela-cri%C8%99an-b01629258/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i>
+              /></a>
+              <a href="https://twitter.com/MihaelaC1102" target="_blank"
+                ><i class="fa-brands fa-x-twitter"></i>
+              /></a>
+      </div> <br> <br> <br> <br>
+      <button class="btn btn--show-modal">Get in touch!</button>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer__nav">
+        <li class="footer__item">
+          <a class="footer__link" href="#">About</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Privacy Policy</a>
+        </li>
+        <li class="footer__item">
+          <a class="footer__link" href="#">Contact</a>
+        </li>
+      </ul>
+      <img src="img/logo-white.png" alt="Logo" class="footer__logo" />
+      <p class="footer__copyright">
+        &copy; Copyright by
+        <a
+          class="footer__link twitter-link"
+          target="_blank"
+          href="https://github.com/mihaelacrisan98"
+          >Mihaela Crișan</a
+    </footer>
+
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+        If you have any questions, 
+        <span class="highlight">CONTACT ME</span>
+      </h2>
+      <form class="modal__form">
+        <label>Your Name</label>
+        <input type="text" />
+        <label>Your Email</label>
+        <input type="email" />
+        <label>Message</label>
+        <input type="text" />
+        <button class="btn">Get in touch &rarr;</button>
+      </form>
+    </div>
+    <div class="overlay hidden"></div>
+
+    <!-- <script src="script.js"></script> -->
+  </body>
+</html>
