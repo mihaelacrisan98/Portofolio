@@ -757,14 +757,14 @@ h4 {
   color: #7937d4;
 }
 
-.fa-html5,
+/* .fa-html5,
 .fa-css3,
 .fa-js,
 .fa-react,
 .fa-git-alt,
 .fa-wordpress-simple {
   color: #4b6e1f;
-}
+} */
 
 .fa-html5:hover,
 .fa-css3:hover,
@@ -772,5 +772,5 @@ h4 {
 .fa-react:hover,
 .fa-git-alt:hover,
 .fa-wordpress-simple:hover {
-  color: #3c5319;
+  color: #4b6e1f;
 }
