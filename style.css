@@ -59,6 +59,32 @@ body {
   transition: transform 1s, opacity 1s;
 }
 
+@media screen and (max-width: 700px) {
+  .section {
+    padding: 45rem 1.5rem; /* Ajustează padding-ul pentru ecrane mici */
+  }
+
+  .section__title {
+    text-align: center; /* Aliniază titlul în centru pentru ecrane mici */
+  }
+
+  .section__header {
+    font-size: 3.5rem; /* Redu dimensiunea textului pentru ecrane mici */
+  }
+
+  .operations__tab-container {
+    flex-direction: column; /* Schimbă direcția tab-urilor pentru ecrane mici */
+  }
+
+  .operations__tab {
+    width: 100%; /* Ocupă întreaga lățime pentru ecrane mici */
+    margin-bottom: 1rem; /* Adaugă spațiu între tab-uri pentru ecrane mici */
+  }
+
+  .operations__content {
+    text-align: center; /* Aliniază conținutul în centru pentru ecrane mici */
+  }
+}
 .section--hidden {
   opacity: 0;
   transform: translateY(8rem);
@@ -211,6 +237,7 @@ img {
 
   align-items: start;
   justify-items: start;
+  position: relative;
 }
 
 h1 {
@@ -254,6 +281,30 @@ h4 {
   background-image: var(--gradient-primary);
 }
 
+@media screen and (max-width: 700px) {
+  .header__title {
+    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
+    row-gap: 1.5rem; /* Redu spațiul dintre elemente pentru ecrane mici */
+  }
+
+  h1 {
+    font-size: 4rem; /* Redu dimensiunea textului pentru ecrane mici */
+  }
+
+  h4 {
+    font-size: 1.8rem; /* Redu dimensiunea textului pentru ecrane mici */
+  }
+
+  .header__img {
+    grid-column: 1 / -1; /* Ocupă întreaga lățime pentru ecrane mici */
+    grid-row: auto; /* Anulează poziționarea absolută pentru ecrane mici */
+    position: static; /* Anulează poziționarea absolută pentru ecrane mici */
+    transform: none; /* Anulează transformarea pentru ecrane mici */
+    margin-top: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+    width: 80%;
+  }
+}
+
 /* FEATURES */
 .features {
   display: grid;
@@ -293,6 +344,58 @@ h4 {
 .features__header {
   font-size: 2rem;
   margin-bottom: 1rem;
+}
+/* Adaugă următoarele stiluri doar pentru ecranele cu lățime maximă de 700px */
+
+@media screen and (max-width: 700px) {
+  .features {
+    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
+    gap: 2rem; /* Redu spațiul dintre elemente pentru ecrane mici */
+    margin: 0 1.5rem; /* Ajustează margin-ul pentru ecrane mici */
+  }
+
+  .features__feature,
+  .features__img {
+    width: 100%; /* Ocupă întreaga lățime pentru ecrane mici */
+  }
+
+  .features__feature {
+    margin-bottom: 2rem; /* Adaugă spațiu între elemente pentru ecrane mici */
+  }
+
+  .features__icon,
+  .features__img {
+    height: auto; /* Asigură că imaginile și pictogramele nu sunt deformate pe ecrane mici */
+  }
+
+  .features__icon {
+    margin-bottom: 1rem; /* Adaugă spațiu între pictograme pentru ecrane mici */
+  }
+
+  .features__project {
+    text-align: center; /* Aliniază textul în centru pentru ecrane mici */
+  }
+
+  .features__header {
+    font-size: 2rem; /* Redu dimensiunea textului pentru ecrane mici */
+    margin-bottom: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+  }
+
+  .features__img {
+    margin-bottom: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+  }
+
+  .features__info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features__info h5,
+  .features__info p {
+    margin-bottom: 1rem; /* Adaugă spațiu între nume/descriere și imagine */
+  }
 }
 
 /* OPERATIONS */
@@ -773,4 +876,8 @@ h4 {
 .fa-git-alt:hover,
 .fa-wordpress-simple:hover {
   color: #4b6e1f;
+}
+
+.footer__link:hover {
+  color: #7937d4;
 }
