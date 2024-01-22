@@ -80,10 +80,6 @@ body {
     width: 100%; /* Ocupă întreaga lățime pentru ecrane mici */
     margin-bottom: 1rem; /* Adaugă spațiu între tab-uri pentru ecrane mici */
   }
-
-  .operations__content {
-    text-align: center; /* Aliniază conținutul în centru pentru ecrane mici */
-  }
 }
 .section--hidden {
   opacity: 0;
