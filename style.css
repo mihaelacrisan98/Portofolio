@@ -211,7 +211,42 @@ img {
   background-color: var(--color-primary-darker);
   color: #333;
 }
+@media only screen and (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    transition: all 0.3s; /* Add transition for a smoother effect */
+    z-index: 100; /* Keep the navigation below header__title */
+  }
 
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    top: 0;
+    padding: 1rem; /* Add padding for a more compact look */
+    z-index: 101; /* Ensure the sticky navigation is above header__title */
+  }
+
+  .nav.hide {
+    transform: translateY(-100%); /* Move the menu off-screen */
+  }
+
+  /* Rest of your existing styles */
+  /* ... */
+
+  .header__title {
+    margin-top: 3rem; /* Adjust margin to create space for the navigation */
+    transition: margin-top 0.3s; /* Add transition for a smoother effect */
+    z-index: 102; /* Set a higher z-index for header__title */
+  }
+
+  /* Additional style to adjust margin when navigation is sticky */
+  .nav.sticky + .header__title {
+    margin-top: 3rem;
+  }
+}
 /* HEADER */
 .header {
   padding: 0 3rem;

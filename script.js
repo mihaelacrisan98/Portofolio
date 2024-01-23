@@ -507,3 +507,21 @@ window.addEventListener('beforeunload', function (e) {
   e.returnValue = '';
 });
 */
+document.addEventListener('DOMContentLoaded', function () {
+  var prevScrollPos = window.pageYOffset;
+  var nav = document.querySelector('.nav');
+
+  window.addEventListener('scroll', function () {
+    var currentScrollPos = window.pageYOffset;
+
+    if (prevScrollPos < currentScrollPos) {
+      // Scrolling down
+      nav.classList.add('hide');
+    } else {
+      // Scrolling up
+      nav.classList.remove('hide');
+    }
+
+    prevScrollPos = currentScrollPos;
+  });
+});
