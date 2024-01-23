@@ -289,25 +289,3 @@ const slider = function () {
   });
 };
 slider();
-
-document.addEventListener('DOMContentLoaded', function () {
-  const nav = document.querySelector('.nav');
-  const navHeight = nav.getBoundingClientRect().height;
-  let isNavSticky = false;
-
-  window.addEventListener('scroll', function () {
-    const scrollPos = window.pageYOffset;
-
-    const isInFirstSection = scrollPos < navHeight;
-
-    if (scrollPos > navHeight && !isNavSticky) {
-      // Scrolling down, make nav sticky
-      nav.classList.add('sticky');
-      isNavSticky = true;
-    } else if ((scrollPos <= navHeight || isInFirstSection) && isNavSticky) {
-      // Scrolling up, remove sticky class
-      nav.classList.remove('sticky');
-      isNavSticky = false;
-    }
-  });
-});
