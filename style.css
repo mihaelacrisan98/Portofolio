@@ -432,7 +432,39 @@ h4 {
     margin-bottom: 1rem; /* Adaugă spațiu între nume/descriere și imagine */
   }
 }
+@media screen and (max-width: 700px) {
+  .features__feature a[href="https://guess-my-number-mh.netlify.app/"]
+  {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
 
+  .features__feature a[href="https://guess-my-number-mh.netlify.app/"] .features__img
+  {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .features__feature a[href="https://guess-my-number-mh.netlify.app/"] .features__info
+  {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features__feature a[href="https://guess-my-number-mh.netlify.app/"] .features__header
+  {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .features__feature a[href="https://guess-my-number-mh.netlify.app/"] .features__img
+  {
+    margin-bottom: 1rem;
+  }
+}
 /* OPERATIONS */
 .operations {
   max-width: 100rem;
@@ -824,7 +856,35 @@ h4 {
   visibility: hidden;
   opacity: 0;
 }
+@media only screen and (max-width: 700px) {
+  .modal {
+    max-width: 90%; /* Redu lățimea maximă a modalului pentru ecrane mici */
+    padding: 2rem; /* Redu padding-ul pentru conținutul modalului pe ecrane mici */
+  }
 
+  .modal__form {
+    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
+    gap: 1.5rem; /* Redu spațiul dintre elemente pentru ecrane mici */
+  }
+
+  .modal__header {
+    font-size: 2.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
+    margin-bottom: 3rem; /* Ajustează spațiul dintre antet și restul conținutului pentru ecrane mici */
+  }
+
+  .modal__form label {
+    font-size: 1.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
+  }
+
+  .modal__form input {
+    font-size: 1.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
+    padding: 1rem; /* Ajustează padding-ul pentru input-uri pe ecrane mici */
+  }
+
+  .modal__form button {
+    margin-top: 1.5rem; /* Ajustează spațiul dintre input-uri și buton pentru ecrane mici */
+  }
+}
 /* COOKIE MESSAGE */
 .cookie-message {
   display: flex;
