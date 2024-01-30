@@ -1009,4 +1009,17 @@ h4 {
     padding: 1rem;
     z-index: 101;
   }
+  .nav.hide {
+    transform: translateY(-100%);
+  }
+
+  /* .header__title {
+    margin-top: 6rem;
+    transition: margin-top 0.3s;
+    z-index: 102; 
+  }
+
+  .nav.sticky + .header__title {
+    margin-top: 6rem;
+  } */
 }
