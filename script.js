@@ -38,6 +38,7 @@ document.addEventListener('keydown', function (e) {
 
 ///////////////////////////////////////
 // Button scrolling
+
 btnScrollTo.addEventListener('click', function (e) {
   const s1coords = section1.getBoundingClientRect();
   // console.log(s1coords);

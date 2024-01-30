@@ -61,24 +61,24 @@ body {
 
 @media screen and (max-width: 700px) {
   .section {
-    padding: 45rem 1.5rem; /* Ajustează padding-ul pentru ecrane mici */
+    padding: 45rem 1.5rem;
   }
 
   .section__title {
-    text-align: center; /* Aliniază titlul în centru pentru ecrane mici */
+    text-align: center;
   }
 
   .section__header {
-    font-size: 3.5rem; /* Redu dimensiunea textului pentru ecrane mici */
+    font-size: 3.5rem;
   }
 
   .operations__tab-container {
-    flex-direction: column; /* Schimbă direcția tab-urilor pentru ecrane mici */
+    flex-direction: column;
   }
 
   .operations__tab {
-    width: 100%; /* Ocupă întreaga lățime pentru ecrane mici */
-    margin-bottom: 1rem; /* Adaugă spațiu între tab-uri pentru ecrane mici */
+    width: 100%;
+    margin-bottom: 1rem;
   }
 }
 .section--hidden {
@@ -189,7 +189,7 @@ img {
 
 .nav__link:link,
 .nav__link:visited {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   font-weight: 400;
   color: inherit;
   text-decoration: none;
@@ -211,47 +211,8 @@ img {
   background-color: var(--color-primary-darker);
   color: #333;
 }
-@media only screen and (max-width: 700px) {
-  .nav {
-    flex-direction: column;
-    height: auto;
-    padding: 2rem;
-    transition: all 0.3s; /* Add transition for a smoother effect */
-    z-index: 100; /* Keep the navigation below header__title */
-  }
 
-  .nav__logo {
-    transform: scale(1.5);
-    height: 8.5rem;
-  }
 
-  .nav.sticky {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.95);
-    width: 100%;
-    top: 0;
-    padding: 1rem; /* Add padding for a more compact look */
-    z-index: 101; /* Ensure the sticky navigation is above header__title */
-  }
-
-  .nav.hide {
-    transform: translateY(-100%); /* Move the menu off-screen */
-  }
-
-  /* Rest of your existing styles */
-  /* ... */
-
-  .header__title {
-    margin-top: 3rem; /* Adjust margin to create space for the navigation */
-    transition: margin-top 0.3s; /* Add transition for a smoother effect */
-    z-index: 102; /* Set a higher z-index for header__title */
-  }
-
-  /* Additional style to adjust margin when navigation is sticky */
-  .nav.sticky + .header__title {
-    margin-top: 3rem;
-  }
-}
 /* HEADER */
 .header {
   padding: 0 3rem;
@@ -319,28 +280,27 @@ h4 {
 
 @media screen and (max-width: 700px) {
   .header__title {
-    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
-    row-gap: 1.5rem; /* Redu spațiul dintre elemente pentru ecrane mici */
+    grid-template-columns: 1fr; 
+    row-gap: 1.5rem; 
   }
 
   h1 {
-    font-size: 4rem; /* Redu dimensiunea textului pentru ecrane mici */
+    font-size: 4rem; /
   }
 
   h4 {
-    font-size: 1.8rem; /* Redu dimensiunea textului pentru ecrane mici */
+    font-size: 1.8rem; 
   }
 
   .header__img {
-    grid-column: 1 / -1; /* Ocupă întreaga lățime pentru ecrane mici */
-    grid-row: auto; /* Anulează poziționarea absolută pentru ecrane mici */
-    position: static; /* Anulează poziționarea absolută pentru ecrane mici */
-    transform: none; /* Anulează transformarea pentru ecrane mici */
-    margin-top: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+    grid-column: 1 / -1; 
+    grid-row: auto; 
+    position: static; 
+    transform: none; 
+    margin-top: 1rem; 
     width: 80%;
   }
 }
-
 /* PROJECTS */
 .features {
   display: grid;
@@ -381,43 +341,42 @@ h4 {
   font-size: 2rem;
   margin-bottom: 1rem;
 }
-
 @media screen and (max-width: 700px) {
   .features {
-    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
-    gap: 2rem; /* Redu spațiul dintre elemente pentru ecrane mici */
-    margin: 0 1.5rem; /* Ajustează margin-ul pentru ecrane mici */
+    grid-template-columns: 1fr; 
+    gap: 2rem; 
+    margin: 0 1.5rem; 
   }
 
   .features__feature,
   .features__img {
-    width: 100%; /* Ocupă întreaga lățime pentru ecrane mici */
+    width: 100%;
   }
 
   .features__feature {
-    margin-bottom: 2rem; /* Adaugă spațiu între elemente pentru ecrane mici */
+    margin-bottom: 2rem;
   }
 
   .features__icon,
   .features__img {
-    height: auto; /* Asigură că imaginile și pictogramele nu sunt deformate pe ecrane mici */
+    height: auto; 
   }
 
   .features__icon {
-    margin-bottom: 1rem; /* Adaugă spațiu între pictograme pentru ecrane mici */
+    margin-bottom: 1rem; 
   }
 
   .features__project {
-    text-align: center; /* Aliniază textul în centru pentru ecrane mici */
+    text-align: center; 
   }
 
   .features__header {
-    font-size: 2rem; /* Redu dimensiunea textului pentru ecrane mici */
-    margin-bottom: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
   }
 
   .features__img {
-    margin-bottom: 1rem; /* Adaugă spațiu între text și imagine pentru ecrane mici */
+    margin-bottom: 1rem; 
   }
 
   .features__info {
@@ -429,7 +388,7 @@ h4 {
 
   .features__info h5,
   .features__info p {
-    margin-bottom: 1rem; /* Adaugă spațiu între nume/descriere și imagine */
+    margin-bottom: 1rem; 
   }
 }
 
@@ -860,31 +819,31 @@ h4 {
 }
 @media only screen and (max-width: 700px) {
   .modal {
-    max-width: 90%; /* Redu lățimea maximă a modalului pentru ecrane mici */
-    padding: 2rem; /* Redu padding-ul pentru conținutul modalului pe ecrane mici */
+    max-width: 90%; 
+    padding: 2rem; 
   }
 
   .modal__form {
-    grid-template-columns: 1fr; /* Ajustează coloanele pentru ecrane mici */
-    gap: 1.5rem; /* Redu spațiul dintre elemente pentru ecrane mici */
+    grid-template-columns: 1fr; 
+    gap: 1.5rem; 
   }
 
   .modal__header {
-    font-size: 2.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
-    margin-bottom: 3rem; /* Ajustează spațiul dintre antet și restul conținutului pentru ecrane mici */
+    font-size: 2.5rem; 
+    margin-bottom: 3rem; 
   }
 
   .modal__form label {
-    font-size: 1.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
+    font-size: 1.5rem; 
   }
 
   .modal__form input {
-    font-size: 1.5rem; /* Redu dimensiunea fontului pentru ecrane mici */
-    padding: 1rem; /* Ajustează padding-ul pentru input-uri pe ecrane mici */
+    font-size: 1.5rem; 
+    padding: 1rem; 
   }
 
   .modal__form button {
-    margin-top: 1.5rem; /* Ajustează spațiul dintre input-uri și buton pentru ecrane mici */
+    margin-top: 1.5rem; 
   }
 }
 /* COOKIE MESSAGE */
@@ -975,10 +934,6 @@ h4 {
   color: #4b6e1f;
 }
 
-.footer__link:hover {
-  color: #7937d4;
-}
-
 @media only screen and (max-width: 700px) {
   .skills {
     gap: 80px;
@@ -1001,12 +956,12 @@ h4 {
 
 .features__img {
   width: 100%;
-  max-width: 400px; /* Ajustează dimensiunea maximă a imaginilor după nevoie */
-  margin-bottom: 1rem; /* Spațiu între imagini și text */
+  max-width: 400px; 
+  margin-bottom: 1rem; /
 }
 
 .features__feature {
-  width: 45%; /* Ajustează lățimea elementelor în funcție de nevoie */
+  width: 45%; 
 }
 
 .features__icon {
@@ -1026,5 +981,32 @@ h4 {
   }
   .features__feature {
     width: 96%; /* Ajustează lățimea elementelor în funcție de nevoie */
+  }
+}
+
+
+@media only screen and (max-width: 700px) {
+  .nav {
+    flex-direction: column;
+    height: auto;
+    padding: 2rem;
+    transition: all 0.3s;
+    z-index: 100;
+  }
+
+  .nav__logo {
+    transform: scale(1.5);
+    height: 8.5rem;
+    top: 3rem; /* Adaugă o înălțime suplimentară între meniu și restul conținutului */
+    z-index: 101;
+  }
+
+  .nav.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    width: 100%;
+    top: 0;
+    padding: 1rem;
+    z-index: 101;
   }
 }
