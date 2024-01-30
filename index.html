@@ -351,10 +351,14 @@
 
     <!-- <script src="script.js"></script> -->
     <script>
-      if (!sessionStorage.getItem('paginaIncarcata')) {
-            location.reload(true);
-            sessionStorage.setItem('paginaIncarcata', 'da');
-        }
+      // Verifică dacă refresh-ul s-a produs deja
+      if (!localStorage.getItem('refreshed')) {
+          // Realizează refresh automat
+          location.reload(true);
+
+          // Marchează că refresh-ul s-a produs
+          localStorage.setItem('refreshed', 'true');
+      }
   </script>
   </body>
 </html>
