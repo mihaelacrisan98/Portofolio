@@ -352,12 +352,12 @@
     <!-- <script src="script.js"></script> -->
     <script>
       // Verifică dacă refresh-ul s-a produs deja
-      if (!localStorage.getItem('refreshed')) {
+      if (typeof window.refreshed === 'undefined') {
           // Realizează refresh automat
           location.reload(true);
 
           // Marchează că refresh-ul s-a produs
-          localStorage.setItem('refreshed', 'true');
+          window.refreshed = true;
       }
   </script>
   </body>
