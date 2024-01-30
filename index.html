@@ -351,14 +351,17 @@
 
     <!-- <script src="script.js"></script> -->
     <script>
-      // Verifică dacă refresh-ul s-a produs deja
-      if (typeof window.refreshed === 'undefined') {
-          // Realizează refresh automat
-          location.reload(true);
+      // Așteaptă până când întreaga pagină este încărcată
+      document.addEventListener('DOMContentLoaded', function() {
+          // Verifică dacă refresh-ul s-a produs deja
+          if (!localStorage.getItem('refreshed')) {
+              // Realizează refresh automat
+              location.reload(true);
 
-          // Marchează că refresh-ul s-a produs
-          window.refreshed = true;
-      }
+              // Marchează că refresh-ul s-a produs
+              localStorage.setItem('refreshed', 'true');
+          }
+      });
   </script>
   </body>
 </html>
