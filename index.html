@@ -350,5 +350,11 @@
     <div class="overlay hidden"></div>
 
     <!-- <script src="script.js"></script> -->
+    <script>
+      if (!sessionStorage.getItem('paginaIncarcata')) {
+            location.reload(true);
+            sessionStorage.setItem('paginaIncarcata', 'da');
+        }
+  </script>
   </body>
 </html>
